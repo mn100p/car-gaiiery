@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>قائمة السيارات</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #004e92, #000428);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .car {
+      background-color: #1f1f1f;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 0 10px #000;
+    }
+    .car img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .car h2 {
+      margin: 10px 0 5px;
+    }
+    .car a {
+      color: #ffcc00;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>قائمة السيارات</h1>
+  <div class="car-grid">
+    <div class="car">
+      <img src="https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_1280.jpg" alt="تويوتا">
+      <h2>تويوتا</h2>
+      <a href="details.html">عرض التفاصيل</a>
+    </div>
+    <div class="car">
+      <img src="https://cdn.pixabay.com/photo/2013/07/13/12/46/ford-160982_1280.png" alt="فورد">
+      <h2>فورد</h2>
+      <a href="details.html">عرض التفاصيل</a>
+    </div>
+    <div class="car">
+      <img src="https://cdn.pixabay.com/photo/2016/04/01/11/22/car-1300629_1280.png" alt="مرسيدس">
+      <h2>مرسيدس</h2>
+      <a href="details.html">عرض التفاصيل</a>
+    </div>
+  </div>
+</body>
+</html>
